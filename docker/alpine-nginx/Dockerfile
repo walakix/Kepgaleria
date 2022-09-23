@@ -11,5 +11,5 @@ COPY php /etc/php8
 WORKDIR /app
 COPY ../../app/. .
 RUN mkdir /var/run/php
-EXPOSE 80
+EXPOSE 8000
 CMD ["/bin/bash", "-c", "php-fpm8 && chmod 777 /var/run/php/php8-fpm.sock && chmod 755 /app/* && nginx -g 'daemon off;'"]

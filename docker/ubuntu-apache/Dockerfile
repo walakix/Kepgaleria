@@ -12,5 +12,5 @@ WORKDIR /app
 COPY ../../app/. .
 COPY appsite.conf /etc/apache2/sites-available
 RUN a2dissite 000-default.conf && a2ensite appsite.conf
-EXPOSE 80
+EXPOSE 8000
 CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
