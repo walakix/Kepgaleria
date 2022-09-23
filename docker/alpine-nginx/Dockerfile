@@ -6,7 +6,7 @@ RUN apk add php8 php8-fpm php8-opcache
 RUN apk add php8-gd php8-zlib php8-curl
 RUN mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
 COPY ./docker/alpine-nginx/nginx.conf /etc/nginx/
-COPY php /etc/php8 
+COPY ./docker/alpine-nginx/php /etc/php8 
 WORKDIR /app
 COPY app/. .
 RUN mkdir /var/run/php
