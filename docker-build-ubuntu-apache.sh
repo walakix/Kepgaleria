@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -f ./docker/ubuntu-apache/Dockerfile -t walaki/kepgaleria .
+docker build -f ./docker/ubuntu-apache/Dockerfile -t walaki/kepgaleria:ubuntu-apache .
