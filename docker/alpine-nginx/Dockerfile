@@ -12,4 +12,4 @@ COPY app/. .
 RUN mkdir /var/run/php
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 EXPOSE 8000
-CMD ["/bin/bash", "-c", "php-fpm8 && chmod 777 /var/run/php/php8-fpm.sock && chmod 755 /app/* && nginx-debug -g 'daemon off;'"]
+CMD ["/bin/bash", "-c", "php-fpm8 && chmod 777 /var/run/php/php8-fpm.sock && chmod 755 /app/* && nginx -g 'daemon off;'"]
