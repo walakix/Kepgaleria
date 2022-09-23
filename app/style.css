@@ -1,0 +1,41 @@
+* {
+	padding:0px;
+	margin:0px;
+}
+
+h1 { 
+    text-align: center;
+}
+
+
+body {
+    background-color:lightblue;
+	padding:5px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    /* width: 180px; */
+  }
+  
+  div.gallery:hover {
+    /* border: 1px solid #777; */
+    box-shadow: 5px 5px 3px rgb(87, 186, 219);
+  }
+  
+  div.gallery img {
+    /* width: 100%;
+    height: auto; */
+    border: 10px solid rgb(230, 230, 230);
+    border-radius: 8px;
+  }
+  
+  div.desc {
+    padding:3px;
+    text-align: center;
+    background-color:rgb(230, 230, 230);
+    border-radius: 8px;
+    font-size: 0.7em;
+  }
